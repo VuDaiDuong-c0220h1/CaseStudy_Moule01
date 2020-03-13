@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyIdol | Đăng ký</title>
+    <link rel="stylesheet" href="css/apply.css">
+</head>
+<body>
+<div class="applyForm">
+    <h2 style="color: hotpink">Đăng ký tài khoản</h2>
+    <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="Username*" id="add-username">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="Password*" id="add-password">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-key icon"></i>
+        <input class="input-field" type="password" placeholder="Confirm Password*" id="confirm-password">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-unlock-alt icon"></i>
+        <input class="input-field" type="text" placeholder="Secret Number*" id="secret-number">
+    </div>
+    <button class="btn" onclick="apply()" style="font-size: 20px">Đăng ký</button>
+</div>
+<div class="findPwd">
+    <h2 style="color: hotpink">Tìm lại mật khẩu</h2>
+    <div class="input-container">
+        <i class="fa fa-user icon"></i>
+        <input class="input-field" type="text" placeholder="Username*" id="find-username">
+    </div>
+    <div class="input-container">
+        <i class="fa fa-unlock-alt icon"></i>
+        <input class="input-field" type="text" placeholder="Secret Number*" id="find-secret-number">
+    </div>
+    <button class="btn" onclick="findPwd()" style="font-size: 20px">Tìm lại mật khẩu</button>
+</div>
+<br/><br/>
+<div class="btn-home">
+    <button class="btn" onclick="window.location.href='index.html' " style="font-size: 20px">Quay về đăng nhập</button>
+</div>
+<script src="js/login.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

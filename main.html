@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MyIdol | Quản lý Idol</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<canvas class="nameList" id="myCanvas" width="400" height="100" ></canvas>
+<div class="input-search">
+    <input class="input-field" type="text" placeholder="Tìm kiếm Idol..." id="search" oninput="searchIdol()">
+    <button class="btn" type="submit" onclick="searchIdol()"><i class="fa fa-search" aria-hidden="true"></i></button>
+    <p id="searchResult"></p>
+</div>
+<div class="listIdol">
+    <table class="idolTable">
+        <thead>
+        <tr>
+            <th width="5%">STT</th>
+            <th width="15%">Tên thật của Idol</th>
+            <th width="15%">Nickname</th>
+            <th width="10%">Ngày sinh</th>
+            <th width="10%">Số đo 3 vòng</th>
+            <th width="15%">Giới thiệu</th>
+            <th colspan="4" style="text-align: center" width="30%">Thao tác</th>
+        </tr>
+        </thead>
+        <tbody id='tableBody'>
+        </tbody>
+    </table>
+</div>
+<div class="addIdol">
+    <canvas class="addList" id="myCanvas-02" width="500" height="100" ></canvas>
+    <table class="addidolTable">
+        <tr>
+            <td>Tên thật của Idol</td>
+            <td><input class="input-field" type="text" id="add-name"></td>
+        </tr>
+        <tr>
+            <td>Nickname</td>
+            <td><input class="input-field" type="text" id="add-nickname"></td>
+        </tr>
+        <tr>
+            <td>Ngày sinh</td>
+            <td><input class="input-field" type="text" id="add-birthday"></td>
+        </tr>
+        <tr>
+            <td>Số đo 3 vòng </td>
+            <td><input class="input-field" type="text" id="add-measurements"></td>
+        </tr>
+        <tr>
+            <td>Giới thiệu </td>
+            <td><input class="input-field" type="text" id="add-describe"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><button class="btn" onclick="addIdol()">Xác nhận</button></td>
+        </tr>
+    </table>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>

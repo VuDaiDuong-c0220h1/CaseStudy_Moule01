@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("../images/background.png");
+    background-color: dodgerblue;
+    background-repeat: no-repeat;
+    background-size: 100% 120%;
+    position: relative;
+}
+* {box-sizing: border-box;}
+
+
+.container{
+    width: 350px;
+    height: 300px;
+    margin: 15% 45% ;
+}
+.input-container {
+    display: -ms-flexbox;
+    display: flex;
+    width: 350px;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 10px;
+    background: hotpink;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+}
+
+.input-field {
+    width: 350px;
+    padding: 10px;
+    outline: none;
+}
+
+.input-field:focus {
+    border: 2px solid hotpink;
+}
+
+.btn {
+    background-color: hotpink;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    width: 350px;
+    opacity: 0.9;
+}
+
+.btn:hover {
+    opacity: 1;
+}
+
